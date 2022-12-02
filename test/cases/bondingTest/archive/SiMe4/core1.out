@@ -1,0 +1,492 @@
+STARTING dscf ON 12 PROCESSORS!
+RUNNING PROGRAM /shared/apps/turbomole/regular/7.3/bin/em64t-unknown-linux-gnu_mpi/dscf_mpi.
+/shared/apps/turbomole/regular/7.3/mpirun_scripts/PMPI/bin/mpirun -machinefile NodeFile.23827 -e OMP_NUM_THREADS=1 -e TURBODIR=/shared/apps/turbomole/regular/7.3 -e OMP_STACK_SIZE=256M -e LD_LIBRARY_PATH=/shared/apps/turbomole/regular/7.3/libso/em64t-unknown-linux-gnu_mpi:/shared/apps/python/3.6-anaconda/lib:/shared/apps/gcc/4.9.0/lib:/shared/apps/gcc/4.9.0/lib64:/shared/apps/gaussian09/D.01/g09/bsd:/shared/apps/gaussian09/D.01/g09/local:/shared/apps/gaussian09/D.01/g09/extras:/shared/apps/gaussian09/D.01/g09:/shared/apps/intel/composer_xe_2013_sp1.2.144/compiler/lib/intel64:/shared/apps/openmpi/1.8.1/intel/2013.sp1.2.144/lib:/shared/apps/slurm/current/lib:/shared/apps/turbomole/regular/6.6/libso/em64t-unknown-linux-gnu_mpi:/shared/apps/intel/composer_xe_2013_sp1.2.144/mkl/lib/intel64:/shared/apps/gaussian09/D.01/gv/lib:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/mpi/intel64/lib:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4:/shared/apps/intel/parallel_studio_xe_2016/debugger_2016/libipt/intel64/lib:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4:/shared/apps/intel/parallel_studio_xe_2016/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin:/shared/apps/R/3.3.1/lib64:/shared/apps/R/3.3.1/3rdparty:/shared/apps/R/3.3.1/lib64/R/lib:/shared/apps/turbomole/regular/7.3/libso/em64t-unknown-linux-gnu_mpi /shared/apps/turbomole/regular/7.3/bin/em64t-unknown-linux-gnu_mpi/dscf_mpi
+ this is node-proc. number 1 running on node node116
+ the total number of node-proc. spawned is  13
+  parallel platform: MPP or cluster with fast interconnect
+
+   OpenMP run-time library returned nthreads =  1
+
+ dscf (node116) : TURBOMOLE V7.3 ( 22135 ) 4 Jul 2018 at 10:54:32
+ Copyright (C) 2018 TURBOMOLE GmbH, Karlsruhe
+
+
+    2020-07-30 15:58:57.317 
+
+
+ SCF run will be profiled !
+
+
+
+                             d s c f - program
+
+                   idea & directorship : reinhart ahlrichs
+                   program development : marco haeser
+                                         michael baer
+                           dft version : oliver treutler
+           parallelized version : malte v. arnim, gina corongiu, GMD 
+
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+                          References             
+                                                 
+          TURBOMOLE:                             
+              R. Ahlrichs, M. Baer, M. Haeser, H. Horn, and
+              C. Koelmel
+              Electronic structure calculations on workstation
+              computers: the program system TURBOMOLE
+              Chem. Phys. Lett. 162: 165 (1989)
+          Density Functional:                              
+              O. Treutler and R. Ahlrichs                      
+              Efficient Molecular Numerical Integration Schemes
+              J. Chem. Phys. 102: 346 (1995)                   
+          Parallel Version:                                
+              Performance of parallel TURBOMOLE for Density    
+              Functional Calculations                          
+              M. v. Arnim and R. Ahlrichs                      
+              J. Comp. Chem. 19: 1746 (1998)                   
+                                         
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -8.74139458   -0.27936369    3.93787839    s     16.000     0
+         -9.89445595    0.00212726    0.00218471    si    14.000     0
+         -8.74541138    3.55262124   -1.72498925    s     16.000     0
+         -4.63593056    3.35387535   -1.62870657    si    14.000     0
+         -3.18897047    0.28546354   -3.94796423    s     16.000     0
+         -4.63680852   -3.08422503   -2.09443846    si    14.000     0
+         -3.17745278   -3.55137724    1.71833798    s     16.000     0
+         -4.63270820   -0.26726491    3.71451578    si    14.000     0
+         -3.18477623    3.27214280    2.21380225    s     16.000     0
+         -8.74625836   -3.26802528   -2.21011936    s     16.000     0
+        -12.60838435    0.00303144    0.00516141    h      1.000     0
+         -3.69525875    5.64574776   -2.73680151    h      1.000     0
+         -3.70402404   -5.19358841   -3.52479372    h      1.000     0
+         -3.69712724   -0.45600841    6.25508288    h      1.000     0
+ 
+       center of nuclear mass  :   -5.95843099    0.00159806   -0.00194628
+       center of nuclear charge:   -5.95802346    0.00157527   -0.00192591
+
+   *************************************************************************
+   test_job                                                                 
+   *************************************************************************
+
+
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    s        6     84     18   cc-pVDZ   [4s3p1d|34s15p1d]
+    si       4     84     18   cc-pVDZ   [4s3p1d|34s15p1d]
+    h        4      7      5   cc-pVDZ   [2s1p|4s1p]
+   ---------------------------------------------------------------------------
+   total:   14    868    200
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :  105
+   total number of contracted shells         :   92
+   total number of cartesian basis functions :  210
+   total number of SCF-basis functions       :  200
+
+
+ integral neglect threshold       :  0.16E-09
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      200       78
+ 
+ number of basis functions   :                    200
+ number of occupied orbitals :                     78
+ 
+
+ automatic virtual orbital shift switched on 
+      shift if e(lumo)-e(homo) < 0.10000000    
+
+
+ keyword $2e-ints_shell_statistics missing in file <control>
+
+ ! One task per shell generated
+  No pre-computed optimal task distribution found
+  ... using automatic task generation
+  
+           ------------------
+           density functional
+           ------------------
+ PBE functional
+ exchange:    LDA + PBE
+ correlation: LDA (PW) + PBE
+
+ iterations will be done with small grid
+  
+ spherical integration : Lebedev's spherical grid
+ spherical gridsize    :                     3
+    i.e. gridpoints    :                   302
+ value for diffuse not defined
+ radial integration    : Chebyshev 2nd kind (scaling 3)
+ radial gridsize       :                     3
+ integration cells     :                    14
+ partition function    : becke
+ partition sharpness   :                     3
+  
+
+ <rddim> : input of entry tasksize
+           from data group '$pardft' failed !
+
+               Default values taken
+
+ <rddim> : input of entry memdiv
+           from data group '$pardft' failed !
+
+               Default values taken
+  DSCF: memory allocation for DFT gridpoints
+  MEMORY is divided by 1 as DEFAULT
+ Each node can hold at most  the                      1 -th part
+ of the gridpoints    
+
+          ------------------------
+          nuclear repulsion energy  :   1803.39971110    
+          ------------------------
+
+  _________________________________
+ |                                 |
+ |         DFTD3 V3.1 Rev 0        |
+ | S.Grimme, University Bonn       |
+ |            June  2014           |
+ |   see standalone version        |
+ |       dftd3 -h for options      |
+ |_________________________________|
+ 
+ Please cite DFT-D3 work done with this code as:
+ S. Grimme, J. Antony, S. Ehrlich and H. Krieg,
+ J. Chem. Phys, 132 (2010), 154104.
+ If used with BJ-damping cite also
+ S. Grimme, S. Ehrlich and L. Goerigk,
+ J. Comput. Chem. 32 (2011), 1456-1465
+ For DFT-D2 the reference is
+ S. Grimme, J. Comput. Chem., 27 (2006), 1787-1799
+ 
+C6 coefficients used:
+                     2  C6 for element                      1
+Z=  1 CN= 0.912     C6(AA)=    3.03
+Z=  1 CN= 0.000     C6(AA)=    7.59
+                     5  C6 for element                     14
+Z= 14 CN= 0.000     C6(AA)=  317.86
+Z= 14 CN= 0.951     C6(AA)=  270.26
+Z= 14 CN= 1.944     C6(AA)=  233.13
+Z= 14 CN= 2.941     C6(AA)=  221.50
+Z= 14 CN= 3.868     C6(AA)=  149.77
+                     3  C6 for element                     16
+Z= 16 CN= 0.000     C6(AA)=  134.01
+Z= 16 CN= 0.995     C6(AA)=  131.00
+Z= 16 CN= 1.990     C6(AA)=  125.81
+
+#           XYZ [au]              R0(AA) [Ang.]  CN          C6(AA)     C8(AA)   C10(AA) [au]
+  1  -8.74139  -0.27936   3.93788   s   0.794  2.059       125.9      6166.4    370069.2
+  2  -9.89446   0.00213   0.00218   si  0.960  4.099       150.1     10738.5    940912.7
+  3  -8.74541   3.55262  -1.72499   s   0.794  2.059       125.9      6166.4    370069.4
+  4  -4.63593   3.35388  -1.62871   si  0.960  4.097       150.1     10738.9    940945.7
+  5  -3.18897   0.28546  -3.94796   s   0.794  2.059       125.9      6166.4    370068.8
+  6  -4.63681  -3.08423  -2.09444   si  0.960  4.097       150.1     10739.0    940951.2
+  7  -3.17745  -3.55138   1.71834   s   0.794  2.059       125.9      6166.4    370068.8
+  8  -4.63271  -0.26726   3.71452   si  0.960  4.097       150.1     10738.9    940946.1
+  9  -3.18478   3.27214   2.21380   s   0.794  2.060       125.9      6166.3    370068.3
+ 10  -8.74626  -3.26803  -2.21012   s   0.794  2.059       125.9      6166.4    370069.4
+ 11 -12.60838   0.00303   0.00516   h   0.395  0.991         3.1        37.4       554.0
+ 12  -3.69526   5.64575  -2.73680   h   0.395  0.991         3.1        37.4       554.0
+ 13  -3.70402  -5.19359  -3.52479   h   0.395  0.991         3.1        37.4       554.0
+ 14  -3.69713  -0.45601   6.25508   h   0.395  0.991         3.1        37.4       554.0
+
+molecular C6(AA) [au] =     15174.14
+
+           DFT-D V3(BJ)
+ DF pbe                                               
+ parameters
+ s6       :    1.0000
+ s8       :    0.7875
+ a1       :    0.4289
+ a2       :    4.4407
+ k1-k3    :   16.0000    1.3333   -4.0000
+ 
+ Edisp /kcal,au:   -25.4794 -0.04060404
+
+ E6    /kcal :   -14.7105
+ E8    /kcal :   -10.7690
+ % E8        : 42.27
+ nuclear repulsion energy                  =    1803.399711104
+ empirical dispersive energy correction    =      -0.040604042
+ nuclear repulsion + dispersion correction =    1803.359107062
+
+
+         -----------------
+         -S,T+V- integrals
+         -----------------
+
+ 1e-integrals will be neglected if expon. factor < 0.159141E-10
+ 
+   Difference densities algorithm switched on.
+   The maximal number of linear combinations of
+   difference densities is                    20 .
+
+ DIIS switched on: error vector is FDS-SDF
+ Max. Iterations for DIIS is     :   4
+ DIIS matrix (see manual) 
+    Scaling factor of diagonals  :  1.200
+    threshold for scaling factor :  0.000
+
+ scf convergence criterion : increment of total energy < .1000000D-05
+                  and increment of one-electron energy < .1000000D-02
+
+  MOs are in ASCII format !
+
+
+ reading orbital data $scfmo  from file mos
+ orbital characterization : expanded
+ mo provided and orthogonalized by Cholesky decomposition
+
+ DSCF restart information will be dumped onto file mos
+
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   1  -3546.1646771808    -8492.0895703     3142.5657861    0.000D+00 0.159D-09
+                            Exc =  -239.301775894652     N = 155.99917785    
+          max. resid. norm for Fia-block=  8.850D-01 for orbital      5a         
+          max. resid. fock norm         =  1.611D+00 for orbital      5a         
+          Delta Eig. =    69.4791506164 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   2  -3547.8657118799    -8500.9807618     3149.7559428    0.123D+01 0.101D-09
+                            Exc =  -238.418741447332     N = 155.99885475    
+          Norm of current diis error:  1.8267    
+          max. resid. norm for Fia-block=  3.769D-01 for orbital      3a         
+          max. resid. fock norm         =  6.660D-01 for orbital      3a         
+          Delta Eig. =    26.1231012593 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   3  -3548.2244195694    -8503.6651593     3152.0816326    0.353D+00 0.779D-10
+                            Exc =  -238.104065512471     N = 155.99874647    
+          Norm of current diis error: 0.79025    
+          max. resid. norm for Fia-block=  1.504D-01 for orbital      3a         
+          max. resid. fock norm         =  2.624D-01 for orbital      3a         
+          Delta Eig. =    12.2051421980 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   4  -3548.3116392996    -8506.5711320     3154.9003856    0.160D+00 0.654D-10
+                            Exc =  -238.011275481762     N = 155.99863780    
+          Norm of current diis error: 0.27915    
+          max. resid. norm for Fia-block=  5.311D-02 for orbital      6a         
+          max. resid. fock norm         =  9.321D-02 for orbital      6a         
+          Delta Eig. =     5.0138379742 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   5  -3548.3252311773    -8506.5717079     3154.8873696    0.621D-01 0.592D-10
+                            Exc =  -237.947779564382     N = 155.99857516    
+          Norm of current diis error: 0.10051    
+          max. resid. norm for Fia-block=  1.643D-02 for orbital      5a         
+          max. resid. fock norm         =  2.877D-02 for orbital      5a         
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     1.4193525810 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   6  -3548.3270278868    -8507.3423737     3155.6562387    0.131D-01 0.564D-10
+                            Exc =  -237.942526491558     N = 155.99854058    
+          Norm of current diis error: 0.30991E-01
+          max. resid. norm for Fia-block=  5.531D-03 for orbital      3a         
+          max. resid. fock norm         =  9.684D-03 for orbital      3a         
+          Delta Eig. =     0.5210230558 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   7  -3548.3271991988    -8507.0560220     3155.3697157    0.372D-02 0.553D-10
+                            Exc =  -237.933459394137     N = 155.99853708    
+          Norm of current diis error: 0.15162E-01
+          max. resid. norm for Fia-block=  1.943D-03 for orbital      6a         
+          max. resid. fock norm         =  3.402D-03 for orbital      6a         
+          Delta Eig. =     0.1527944725 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   8  -3548.3272370583    -8507.1571596     3155.4708155    0.769D-03 0.546D-10
+                            Exc =  -237.932503049072     N = 155.99853198    
+          Norm of current diis error: 0.38999E-02
+          max. resid. norm for Fia-block=  7.272D-04 for orbital      3a         
+          max. resid. fock norm         =  1.273D-03 for orbital      3a         
+          Delta Eig. =     0.0626792375 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   9  -3548.3272399254    -8507.1725176     3155.4861706    0.281D-03 0.541D-10
+                            Exc =  -237.932383643974     N = 155.99853086    
+          Norm of current diis error: 0.16079E-02
+          max. resid. norm for Fia-block=  2.869D-04 for orbital      6a         
+          max. resid. fock norm         =  5.037D-04 for orbital      2a         
+          Delta Eig. =     0.0260729791 eV 
+
+ ENERGY CONVERGED !
+
+ Big Grid 
+ e2xc, e2xcold =   -237.93197624   -237.93197624
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  10  -3548.3314675638    -8507.1747193     3155.4841447    0.214D-03 0.538D-10
+                            Exc =  -237.936203341159     N = 155.99997600    
+          max. resid. norm for Fia-block=  9.570D-05 for orbital      4a         
+          max. resid. fock norm         =  1.683D-04 for orbital      4a         
+
+ convergence criteria satisfied after    10 iterations
+
+
+   *************************************************************************
+   test_job                                                                 
+   *************************************************************************
+
+
+                  ------------------------------------------ 
+                 |  total energy      =  -3548.33146756384  |
+                  ------------------------------------------ 
+                 :  kinetic energy    =   3540.32809868662  :
+                 :  potential energy  =  -7088.65956625046  :
+                 :  virial theorem    =      1.99774446977  :
+                 :  wavefunction norm =      1.00000000000  :
+                  .......................................... 
+
+
+ <geterg> : there is no data group $energy 
+
+
+ <skperg> : $end is missing 
+
+
+ orbitals $scfmo  will be written to file mos
+
+    irrep                 74a         75a         76a         77a         78a   
+ eigenvalues H         -0.25543    -0.25480    -0.23156    -0.23150    -0.23121
+            eV          -6.9506     -6.9334     -6.3010     -6.2995     -6.2915
+ occupation              2.0000      2.0000      2.0000      2.0000      2.0000 
+
+    irrep                 79a         80a         81a         82a         83a   
+ eigenvalues H         -0.07154    -0.06804    -0.06799    -0.06301    -0.06296
+            eV          -1.9466     -1.8515     -1.8501     -1.7145     -1.7133
+ 
+ 
+ 
+ 
+ ==============================================================================
+                           electrostatic moments
+ ==============================================================================
+
+ reference point for electrostatic moments:    0.00000   0.00000   0.00000
+
+ 
+              nuc           elec       ->  total
+ ------------------------------------------------------------------------------
+                          charge      
+ ------------------------------------------------------------------------------
+         156.000000    -156.000000      -0.000000
+ 
+ ------------------------------------------------------------------------------
+                       dipole moment  
+ ------------------------------------------------------------------------------
+   x    -929.451660     929.471679       0.020018
+   y       0.245742      -0.246933      -0.001191
+   z      -0.300442       0.301578       0.001136
+ 
+   | dipole moment | =     0.0201 a.u. =     0.0511 debye 
+ 
+ ------------------------------------------------------------------------------
+                     quadrupole moment
+ ------------------------------------------------------------------------------
+  xx    6629.768456   -6727.542591     -97.774135
+  yy    1099.186234   -1196.631658     -97.445424
+  zz    1099.672265   -1197.119814     -97.447550
+  xy      -1.859768       1.867623       0.007855
+  xz       1.597035      -1.608122      -0.011087
+  yz       0.206330      -0.200364       0.005966
+ 
+     1/3  trace=     -97.555703
+     anisotropy=       0.328660
+ 
+ ==============================================================================
+ 
+
+    dscf profiling
+  --------------------------------------------------------------------
+             module   cpu total (s)       %  wall total (s)       %
+
+          dscf.total            55.4  100.00            39.7  100.00
+        dscf.prepare             0.1    0.26             0.2    0.53
+      prepare.oneint             0.0    0.01             0.0    0.02
+     prepare.moinput             0.0    0.02             0.0    0.06
+     moinput_orthmos             0.0    0.01             0.0    0.02
+            dscf.scf            55.1   99.44            39.5   99.35
+             scf.pre             0.0    0.00             0.0    0.02
+        scf.makedmat             1.6    2.91             0.3    0.70
+          scf.shloop            32.3   58.28            35.8   90.21
+          shloop_omp            32.3   58.25            35.8   90.20
+          scf.symcar             0.0    0.00             0.0    0.01
+        scf.makefock             0.0    0.03             0.2    0.46
+          scf.energy             0.0    0.00             0.0    0.00
+             scf.dft             0.7    1.18             0.8    1.92
+        dft_grid_con             0.0    0.02             0.0    0.02
+          scf.newerg             0.0    0.00             0.0    0.00
+          scf.newcnv             1.7    3.01             0.2    0.40
+           scf.fdiag            10.8   19.44             0.9    2.34
+         diag_tritrn             0.1    0.18             0.0    0.03
+          diag_rdiag             0.9    1.62             0.1    0.19
+          scf.modump             2.3    4.13             0.8    1.92
+           ortho_all             0.0    0.06             0.0    0.01
+     scf_loop_mkdmat             0.0    0.00             0.0    0.00
+            scf.post             0.7    1.18             0.1    0.24
+        dscf.postscf             0.2    0.30             0.0    0.12
+ 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :  55.50 seconds
+         total wall-time :  39.97 seconds
+    ------------------------------------------------------------------------
+
+   ****  dscf : all done  ****
+
+
+    2020-07-30 15:59:37.091 
+

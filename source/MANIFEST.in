@@ -1,0 +1,7 @@
+include ClusterMaestro/initilize/structures/*
+include ClusterMaestro/initilize/structures/cores/*
+include ClusterMaestro/initilize/structures/substituents/*
+include ClusterMaestro/initilize/structures/substituents/werkstatt/*
+include ClusterMaestro/initilize/structures/werkstatt/*
+include ClusterMaestro/lib/strukturFaktor/libssf.so
+
